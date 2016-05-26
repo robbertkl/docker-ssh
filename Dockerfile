@@ -7,4 +7,6 @@ RUN apk add --no-cache --virtual .docker-ssh \
 RUN >/etc/motd
 COPY init.sh /
 
+EXPOSE 22
+
 CMD [ "/init.sh" ]
